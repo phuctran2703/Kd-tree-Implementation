@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.CarRayIntersectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Ray 1 Origin -->
+        <TextView
+            android:id="@+id/textViewRay1Origin"
+            style="@style/SectionTitle"
+            android:text="Ray Origin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextRay1X0"
+                style="@style/InputField"
+                android:hint="X0"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextRay1Y0"
+                style="@style/InputField"
+                android:hint="Y0"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextRay1Z0"
+                style="@style/InputField"
+                android:hint="Z0"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Ray 1 Direction -->
+        <TextView
+            android:id="@+id/textViewRay1Direction"
+            style="@style/SectionTitle"
+            android:text="Ray Direction" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextRay1Xd"
+                style="@style/InputField"
+                android:hint="Xd"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextRay1Yd"
+                style="@style/InputField"
+                android:hint="Yd"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextRay1Zd"
+                style="@style/InputField"
+                android:hint="Zd"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Add more rays as needed in a similar fashion -->
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Submit" />
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/buttonReturn"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Return" />
+
+    </LinearLayout>
+</ScrollView>

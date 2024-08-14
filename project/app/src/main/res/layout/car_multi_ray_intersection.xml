@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.CarMultiRayIntersectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Number of Rays -->
+        <TextView
+            android:id="@+id/textViewNumOfRays"
+            style="@style/SectionTitle"
+            android:text="Number of Rays" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNumOfRays"
+                style="@style/InputField"
+                android:hint="Integer"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Submit" />
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/buttonReturn"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Return" />
+
+    </LinearLayout>
+</ScrollView>
